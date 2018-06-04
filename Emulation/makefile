@@ -7,7 +7,6 @@ MODE ?=veloce
 #make all does everything
 all: work build run
 
-
 #Create respective work libs and map them 
 work:
 	vlib work.$(MODE)
@@ -17,11 +16,11 @@ work:
 build:
 
 ifeq ($(MODE),puresim)		
-		vlog ahb3lite_master.sv				
-		vlog ahb3lite_slave.sv	
-		vlog ahb3lite_mux.sv		
-		vlog ahb3lite_decoder.sv
-		vlog top.sv				
+	#	vlog ahb3lite_master.sv				
+	#	vlog ahb3lite_slave.sv	
+	#	vlog ahb3lite_mux.sv		
+	#	vlog ahb3lite_decoder.sv
+		vlog ahb3lite_top.sv				
 	#	vlog ahb3_packet.sv
 	#	vlog ahb3_generator.sv
 	#	vlog ahb3_interface_tb.sv
@@ -57,13 +56,12 @@ else
 endif
 
 run:
+	vsim -c -novopt -do "run -all;exit" ahb3_top
+
+run_em:
 	vsim -c -novopt -do "run -all" top_hdl ahb3_top TbxSvManager	          #Run all 
 	cp transcript transcript.$(MODE)		                          #Record transcript 	
 	
 
 clean:
 	rm -rf tbxbindings.h modelsim.ini transcript.veloce transcript.puresim work work.puresim work.veloce transcript *~ vsim.wlf *.log dgs.dbg dmslogdir veloce.med veloce.wave veloce.map velrunopts.ini edsenv 
-	
-
-
-
