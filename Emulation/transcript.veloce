@@ -1,0 +1,685 @@
+# vsim -do "run -all" -c -novopt top_hdl ahb3_top TbxSvManager 
+# Start time: 12:19:55 on Mar 16,2018
+# Loading /var/tmp/kmehta@velocesolo.ece.pdx.edu_dpi_10870/linux_gcc-4.5.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim
+# //  Version 10.3 linux Jan  6 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /u/kmehta/sv_project/work.veloce.top_hdl
+# Loading sv_std.std
+# Loading work.top_hdl
+# Refreshing /u/kmehta/sv_project/work.veloce.tbxSemaphores_pkg
+# Loading work.tbxSemaphores_pkg
+# Refreshing /u/kmehta/sv_project/work.veloce.tbxInternal_IOVectors_Mod
+# Loading work.tbxInternal_IOVectors_Mod
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3_top
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3_top_sv_unit
+# Loading work.ahb3_top_sv_unit
+# Loading work.ahb3_top
+# Refreshing /u/kmehta/sv_project/work.veloce.intf
+# Loading work.intf
+# Refreshing /u/kmehta/sv_project/work.veloce.test
+# Loading work.test
+# Refreshing /u/kmehta/sv_project/work.veloce.top
+# Loading work.top
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3lite_master
+# Loading work.ahb3lite_master
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3lite_slave
+# Loading work.ahb3lite_slave
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3lite_decoder
+# Loading work.ahb3lite_decoder
+# Refreshing /u/kmehta/sv_project/work.veloce.ahb3lite_mux
+# Loading work.ahb3lite_mux
+# Refreshing /u/kmehta/sv_project/work.veloce.TbxSvManager
+# Loading work.TbxSvManager
+# Loading /u/kmehta/sv_project/work.veloce/_sc/linux_gcc-4.5.0/systemc.so
+# Loading /u/kmehta/sv_project/veloce.med/questa/lib_tbxsysc.TbxSyscManagerInst
+# Loading /u/kmehta/sv_project/work.veloce.TbxScManager
+# ** Warning: (vsim-8637) ahb3_driver.sv(26): A modport ('drv') should not be used in a hierarchical path.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(32): Clocking block output vif.drv_cb.i_HADDR is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(37): Clocking block output vif.drv_cb.i_HBURST is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(35): Clocking block output vif.drv_cb.i_HSIZE is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(36): Clocking block output vif.drv_cb.i_HTRANS is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(34): Clocking block output vif.drv_cb.i_HWDATA is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-8441) ahb3_monitor.sv(33): Clocking block output vif.drv_cb.i_HWRITE is not legal in this
+# or another expression.
+#         Region: /ahb3_top_sv_unit
+# ** Warning: (vsim-3017) top.sv(39): [TFMPC] - Too few port connections. Expected 20, found 19.
+#         Region: /ahb3_top/dut/master
+# ** Warning: (vsim-3722) top.sv(39): [TFMPC] - Missing connection for port 'HSEL'.
+# Compiling /var/tmp/kmehta@velocesolo.ece.pdx.edu_dpi_10870/linux_gcc-4.5.0/exportwrapper.c
+# Loading /var/tmp/kmehta@velocesolo.ece.pdx.edu_dpi_10870/linux_gcc-4.5.0/dpi_auto_compile.so
+# 
+#                          TBX Software Version 3.0.0.7.2
+#                 Copyright 2003-2014 Mentor Graphics Corporation
+#                               All Rights Reserved
+# 
+# 
+# Info!     [TBXR-6579]: : Initializing...
+# Info!     [TCLC-5501]: : No session exist to attach. Potentially key option is
+#                        missing.
+# Info!     [TCLC-5501]: : New Session Launched.
+# Info!     [TCLC-5501]: : Single User Mode. Other users will not be able to
+#                        attach to this session.
+# Info!       [CS-5156]: : Collecting memory contents from 'rtlc generated mem
+#                        cont file'.
+# Info!       [CS-5156]: : Collecting memory contents from 'rtlc generated mem cont file'.
+# Info!       [CS-5156]: : Collecting memory contents from 'rtlc generated mem cont file'.
+# 
+# 
+# 
+# **************************************************
+#         Software Version  : 3.0.0.7      
+# **************************************************
+# Loading design veloce
+# Info!     [TCLC-5501]: : Waiting for project open from master client...
+# Info!     [TCLC-5614]: : Project already open. Owner is "kmehta" and HostName
+#                        "velocesolo.ece.pdx.edu" Attached to existing session
+# Info!     [TCLC-5501]: : Single User Mode. Other users will not be able to
+#                        attach to this session.
+# Design loaded successfully.
+# Info! : : Sourcing veloce.med/compileopts.ini
+# Info! : : Sourcing velrunopts.ini
+# Info!     [RTS-20008]: : Connecting to emulator 'velocesolo1' (Comodel Host :
+#                        velocesolo) ...
+# Info!     [TCLC-5502]: : Successfully connected to emulator.
+# Info!     [TCLC-5501]: : Trace mode is set to SSR
+# Info!     [TCLC-5501]: : project database locked.
+# Connected to emulator velocesolo1
+# Info!     [RTS-20013]: : Configuring the design.
+# Info!     [RTS-20014]: : Resource reservation started ...
+# Info!     [RTS-20014]: : Resource reservation done (time taken 0.03 s)
+# Info!     [RTS-20015]: : Resource initialization started ...
+# Info!                : : Reservation of AVB[0] UCK[1] CCH[0] without remapping
+#                       
+# Info!     [RTS-20110]: : Waiting for EHS-EDS connection to establish...
+# Info!     [RTS-20110]: : EHS-EDS connection established. (time taken 1.39 s)
+# Info!     [RTS-20018]: : Freeze design for setup started ...
+# Info!     [RTS-20015]: : Resource initialization done (time taken 14.12 s)
+# Info!     [RTS-20018]: : Freeze design for setup done (time taken 0.12 s)
+# Info!     [RTS-20016]: : Trace system turn on started ...
+# Info!     [RTS-20016]: : Trace system turn on done (time taken 0.56 s)
+# Info!     [RTS-20019]: : Clock routing started ...
+# Info!     [RTS-20019]: : Clock routing done (time taken 0.00 s)
+# Info!     [RTS-20032]: : Clock:top_hdl.Uclock Domain=0 Freq=1851.9 kHz (Hi=24
+#                        Lo=30)
+# Info!     [RTS-20024]: : Reset all used memories started ...
+# Info!     [RTS-20024]: : Reset all used memories done (time taken 0.01 s)
+# Info!       [CS-5156]: : Collecting memory contents from 'rtlc generated mem cont file'.
+# Info!     [RTS-20021]: : Memory initialization started ...
+# Info!     [RTS-20021]: : Memory initialization done (time taken 0.00 s)
+# Info!     [RTS-20022]: : User state initialization started ...
+# Info!     [RTS-20022]: : User state initialization done (time taken 3.28 s)
+# Info!     [RTS-20044]: : Store Interrupt config started ...
+# Info!     [RTS-20066]: : Trigger position: 50, Total trace depth: 64512 cycles.
+# Info!     [RTS-20044]: : Store Interrupt config done (time taken 3.68 s)
+# Info!     [RTS-20016]: : Trace system turn on started ...
+# Info!     [RTS-20016]: : Trace system turn on done (time taken 0.04 s)
+# Info!     [TCLC-5502]: : Design configured successfully.
+# Info!     [RTS-20067]: : Load Breakpoint/Event done (time taken 0.00 s)
+# Info!     [TCLC-5651]: : Configure/Design download time: 0:00:23
+# Design configured
+# 
+# 
+# 
+# 
+# Info!     [TBXR-6571]: : TAPI slot number used : 1
+# Info!     [TCLC-5654]: : Will work with the clock "top_hdl.Uclock"
+# Info!     [TBXR-6573]: : Starting up clocks...
+# Info!     [TCLC-5654]: : Will work with the clock "top_hdl.Uclock"
+# Info!     [TBXR-6576]: : Creating 320 bit write channel...
+# Info!     [TBXR-6576]: : Creating 640 bit read channel...
+# Info!     [TBXR-6580]: : Initialization complete.
+# run -all 
+# ** Warning: (vsim-3017) ahb3lite_top.sv(51): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ns  Iteration: 0  Instance: /ahb3_top/dut/master File: ahb3lite_master.sv
+# ** Warning: (vsim-3722) ahb3lite_top.sv(51): [TFMPC] - Missing connection for port 'HSEL'.
+# scoreboard function
+#                   20           0 ,, task write generator
+#                   20Enter into the driver 
+#                   20   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 011
+# HWDATA FROM input packet 	 6116fa6f
+#  Data in the memory 00006116fa6f
+# Data has been wriiten successfully
+# 
+#                   30           1 ,, task write generator
+#                   30Enter into the driver 
+#                   30   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 022
+# HWDATA FROM input packet 	 10ed77d4
+#  Data in the memory 000010ed77d4
+# Data has been wriiten successfully
+# 
+#                   40           2 ,, task write generator
+#                   40Enter into the driver 
+#                   40   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 033
+# HWDATA FROM input packet 	 32ccb7db
+#  Data in the memory 000032ccb7db
+# Data has been wriiten successfully
+# 
+#                   50           3 ,, task write generator
+#                   50Enter into the driver 
+#                   50   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 044
+# HWDATA FROM input packet 	 26008320
+#  Data in the memory 000026008320
+# Data has been wriiten successfully
+# 
+#                   60           4 ,, task write generator
+#                   60Enter into the driver 
+#                   60   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 001
+# HWDATA FROM input packet 	 37378d25
+#  Data in the memory 000037378d25
+# Data has been wriiten successfully
+# 
+#                   70           5 ,, task write generator
+#                   70Enter into the driver 
+#                   70   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 005
+# HWDATA FROM input packet 	 da329d8a
+#  Data in the memory 0000da329d8a
+# Data has been wriiten successfully
+# 
+#                   80   task read in generator
+#                   80Enter into the driver 
+#                   80   enter monitor task
+# Scoreboard read 
+# temp address = 011
+# Read data from DUT 10ed77d4
+# DATA from TB memory 00006116fa6f
+# ** Error: Data reading failed
+#    Time: 90 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                   90   task read in generator
+#                   90Enter into the driver 
+#                   90   enter monitor task
+# Scoreboard read 
+# temp address = 022
+# Read data from DUT 32ccb7db
+# DATA from TB memory 000010ed77d4
+# ** Error: Data reading failed
+#    Time: 100 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  100   task read in generator
+#                  100Enter into the driver 
+#                  100   enter monitor task
+# Scoreboard read 
+# temp address = 033
+# Read data from DUT 26008320
+# DATA from TB memory 000032ccb7db
+# ** Error: Data reading failed
+#    Time: 110 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  110   task read in generator
+#                  110Enter into the driver 
+#                  110   enter monitor task
+# Scoreboard read 
+# temp address = 044
+# Read data from DUT 37378d25
+# DATA from TB memory 000026008320
+# ** Error: Data reading failed
+#    Time: 120 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  120   task read in generator
+#                  120Enter into the driver 
+#                  120   enter monitor task
+# Scoreboard read 
+# temp address = 001
+# Read data from DUT da329d8a
+# DATA from TB memory 000037378d25
+# ** Error: Data reading failed
+#    Time: 130 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  130   task read in generator
+#                  130Enter into the driver 
+#                  130   enter monitor task
+# Scoreboard read 
+# temp address = 005
+# Read data from DUT 00000000
+# DATA from TB memory 0000da329d8a
+# ** Error: Data reading failed
+#    Time: 140 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  140   write burst in generator
+#                  140Enter into the driver 
+#                  140   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0ab
+# HWDATA FROM input packet 	 e5cb7258
+#  Data in the memory 0000e5cb7258
+# Data has been wriiten successfully
+# 
+#                  150   write burst in generator loop
+#                  150Enter into the driver 
+#                  150   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0af
+# HWDATA FROM input packet 	 ff20de23
+#  Data in the memory 0000ff20de23
+# Data has been wriiten successfully
+# 
+#                  160   write burst in generator loop
+#                  160Enter into the driver 
+#                  160   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0b3
+# HWDATA FROM input packet 	 1d1e565a
+#  Data in the memory 00001d1e565a
+# Data has been wriiten successfully
+# 
+#                  170   write burst in generator loop
+#                  170Enter into the driver 
+#                  170   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0b7
+# HWDATA FROM input packet 	 71d63265
+#  Data in the memory 000071d63265
+# Data has been wriiten successfully
+# 
+#                  180   write burst in generator loop
+#                  180Enter into the driver 
+#                  180   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0bb
+# HWDATA FROM input packet 	 0f0c10ef
+#  Data in the memory 00000f0c10ef
+# Data has been wriiten successfully
+# 
+#                  190   write burst in generator loop
+#                  190Enter into the driver 
+#                  190   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0bf
+# HWDATA FROM input packet 	 88ef10cb
+#  Data in the memory 000088ef10cb
+# Data has been wriiten successfully
+# 
+#                  200   write burst in generator loop
+#                  200Enter into the driver 
+#                  200   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0c3
+# HWDATA FROM input packet 	 e1a0d5f2
+#  Data in the memory 0000e1a0d5f2
+# Data has been wriiten successfully
+# 
+#                  210   write burst in generator loop
+#                  210Enter into the driver 
+#                  210   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0c7
+# HWDATA FROM input packet 	 b829d330
+#  Data in the memory 0000b829d330
+# Data has been wriiten successfully
+# 
+#                  220   write burst in generator loop
+#                  220Enter into the driver 
+#                  220   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0cb
+# HWDATA FROM input packet 	 7c9045d2
+#  Data in the memory 00007c9045d2
+# Data has been wriiten successfully
+# 
+#                  230   write burst in generator loop
+#                  230Enter into the driver 
+#                  230   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0cf
+# HWDATA FROM input packet 	 ed421340
+#  Data in the memory 0000ed421340
+# Data has been wriiten successfully
+# 
+#                  240   write burst in generator loop
+#                  240Enter into the driver 
+#                  240   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0d3
+# HWDATA FROM input packet 	 bd439f73
+#  Data in the memory 0000bd439f73
+# Data has been wriiten successfully
+# 
+#                  250   write burst in generator
+#                  250Enter into the driver 
+#                  250   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0de
+# HWDATA FROM input packet 	 bb041c1d
+#  Data in the memory 0000bb041c1d
+# Data has been wriiten successfully
+# 
+#                  260   write burst in generator loop
+#                  260Enter into the driver 
+#                  260   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0e2
+# HWDATA FROM input packet 	 951fa19a
+#  Data in the memory 0000951fa19a
+# Data has been wriiten successfully
+# 
+#                  270   write burst in generator loop
+#                  270Enter into the driver 
+#                  270   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0e6
+# HWDATA FROM input packet 	 5d1ebc89
+#  Data in the memory 00005d1ebc89
+# Data has been wriiten successfully
+# 
+#                  280   write burst in generator loop
+#                  280Enter into the driver 
+#                  280   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0ea
+# HWDATA FROM input packet 	 10e50cfe
+#  Data in the memory 000010e50cfe
+# Data has been wriiten successfully
+# 
+#                  290   write burst in generator loop
+#                  290Enter into the driver 
+#                  290   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0ee
+# HWDATA FROM input packet 	 407c1ac3
+#  Data in the memory 0000407c1ac3
+# Data has been wriiten successfully
+# 
+#                  300   write burst in generator loop
+#                  300Enter into the driver 
+#                  300   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0f2
+# HWDATA FROM input packet 	 321b459b
+#  Data in the memory 0000321b459b
+# Data has been wriiten successfully
+# 
+#                  310   write burst in generator loop
+#                  310Enter into the driver 
+#                  310   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0f6
+# HWDATA FROM input packet 	 0d7a45b7
+#  Data in the memory 00000d7a45b7
+# Data has been wriiten successfully
+# 
+#                  320   write burst in generator loop
+#                  320Enter into the driver 
+#                  320   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0fa
+# HWDATA FROM input packet 	 9c6fad00
+#  Data in the memory 00009c6fad00
+# Data has been wriiten successfully
+# 
+#                  330   write burst in generator loop
+#                  330Enter into the driver 
+#                  330   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0fe
+# HWDATA FROM input packet 	 c4273ac1
+#  Data in the memory 0000c4273ac1
+# Data has been wriiten successfully
+# 
+#                  340   write burst in generator loop
+#                  340Enter into the driver 
+#                  340   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 102
+# HWDATA FROM input packet 	 9d1f43af
+#  Data in the memory 00009d1f43af
+# Data has been wriiten successfully
+# 
+#                  350   write burst in generator loop
+#                  350Enter into the driver 
+#                  350   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 106
+# HWDATA FROM input packet 	 ebffe7cd
+#  Data in the memory 0000ebffe7cd
+# Data has been wriiten successfully
+# 
+#                  360   Read burst in generator
+#                  360Enter into the driver 
+#                  360   enter monitor task
+# Scoreboard read 
+# temp address = 0ab
+# Read data from DUT ff20de23
+# DATA from TB memory 0000e5cb7258
+# ** Error: Data reading failed
+#    Time: 370 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  370     Read burst in generator loop
+#                  370Enter into the driver 
+#                  370   enter monitor task
+# Scoreboard read 
+# temp address = 0af
+# Read data from DUT ff20de23
+# DATA from TB memory 0000ff20de23
+# Data read successfully and it matches
+# 
+#                  380     Read burst in generator loop
+#                  380Enter into the driver 
+#                  380   enter monitor task
+# Scoreboard read 
+# temp address = 0b3
+# Read data from DUT 1d1e565a
+# DATA from TB memory 00001d1e565a
+# Data read successfully and it matches
+# 
+#                  390     Read burst in generator loop
+#                  390Enter into the driver 
+#                  390   enter monitor task
+# Scoreboard read 
+# temp address = 0b7
+# Read data from DUT 71d63265
+# DATA from TB memory 000071d63265
+# Data read successfully and it matches
+# 
+#                  400     Read burst in generator loop
+#                  400Enter into the driver 
+#                  400   enter monitor task
+# Scoreboard read 
+# temp address = 0bb
+# Read data from DUT 0f0c10ef
+# DATA from TB memory 00000f0c10ef
+# Data read successfully and it matches
+# 
+#                  410     Read burst in generator loop
+#                  410Enter into the driver 
+#                  410   enter monitor task
+# Scoreboard read 
+# temp address = 0bf
+# Read data from DUT 88ef10cb
+# DATA from TB memory 000088ef10cb
+# Data read successfully and it matches
+# 
+#                  420     Read burst in generator loop
+#                  420Enter into the driver 
+#                  420   enter monitor task
+# Scoreboard read 
+# temp address = 0c3
+# Read data from DUT e1a0d5f2
+# DATA from TB memory 0000e1a0d5f2
+# Data read successfully and it matches
+# 
+#                  430     Read burst in generator loop
+#                  430Enter into the driver 
+#                  430   enter monitor task
+# Scoreboard read 
+# temp address = 0c7
+# Read data from DUT b829d330
+# DATA from TB memory 0000b829d330
+# Data read successfully and it matches
+# 
+#                  440     Read burst in generator loop
+#                  440Enter into the driver 
+#                  440   enter monitor task
+# Scoreboard read 
+# temp address = 0cb
+# Read data from DUT 7c9045d2
+# DATA from TB memory 00007c9045d2
+# Data read successfully and it matches
+# 
+#                  450     Read burst in generator loop
+#                  450Enter into the driver 
+#                  450   enter monitor task
+# Scoreboard read 
+# temp address = 0cf
+# Read data from DUT ed421340
+# DATA from TB memory 0000ed421340
+# Data read successfully and it matches
+# 
+#                  460     Read burst in generator loop
+#                  460Enter into the driver 
+#                  460   enter monitor task
+# Scoreboard read 
+# temp address = 0d3
+# Read data from DUT bd439f73
+# DATA from TB memory 0000bd439f73
+# Data read successfully and it matches
+# 
+#                  470   Read burst in generator
+#                  470Enter into the driver 
+#                  470   enter monitor task
+# Scoreboard read 
+# temp address = 0de
+# Read data from DUT 951fa19a
+# DATA from TB memory 0000bb041c1d
+# ** Error: Data reading failed
+#    Time: 480 ns  Scope: ahb3_top_sv_unit.scoreboard.data_read File: ahb3_scoreboard.sv Line: 106
+# 
+#                  480     Read burst in generator loop
+#                  480Enter into the driver 
+#                  480   enter monitor task
+# Scoreboard read 
+# temp address = 0e2
+# Read data from DUT 951fa19a
+# DATA from TB memory 0000951fa19a
+# Data read successfully and it matches
+# 
+#                  490     Read burst in generator loop
+#                  490Enter into the driver 
+#                  490   enter monitor task
+# Scoreboard read 
+# temp address = 0e6
+# Read data from DUT 5d1ebc89
+# DATA from TB memory 00005d1ebc89
+# Data read successfully and it matches
+# 
+#                  500     Read burst in generator loop
+#                  500Enter into the driver 
+#                  500   enter monitor task
+# Scoreboard read 
+# temp address = 0ea
+# Read data from DUT 10e50cfe
+# DATA from TB memory 000010e50cfe
+# Data read successfully and it matches
+# 
+#                  510     Read burst in generator loop
+#                  510Enter into the driver 
+#                  510   enter monitor task
+# Scoreboard read 
+# temp address = 0ee
+# Read data from DUT 407c1ac3
+# DATA from TB memory 0000407c1ac3
+# Data read successfully and it matches
+# 
+#                  520     Read burst in generator loop
+#                  520Enter into the driver 
+#                  520   enter monitor task
+# Scoreboard read 
+# temp address = 0f2
+# Read data from DUT 321b459b
+# DATA from TB memory 0000321b459b
+# Data read successfully and it matches
+# 
+#                  530     Read burst in generator loop
+#                  530Enter into the driver 
+#                  530   enter monitor task
+# Scoreboard read 
+# temp address = 0f6
+# Read data from DUT 0d7a45b7
+# DATA from TB memory 00000d7a45b7
+# Data read successfully and it matches
+# 
+#                  540     Read burst in generator loop
+#                  540Enter into the driver 
+#                  540   enter monitor task
+# Scoreboard read 
+# temp address = 0fa
+# Read data from DUT 9c6fad00
+# DATA from TB memory 00009c6fad00
+# Data read successfully and it matches
+# 
+#                  550     Read burst in generator loop
+#                  550Enter into the driver 
+#                  550   enter monitor task
+# Scoreboard read 
+# temp address = 0fe
+# Read data from DUT c4273ac1
+# DATA from TB memory 0000c4273ac1
+# Data read successfully and it matches
+# 
+#                  560     Read burst in generator loop
+#                  560Enter into the driver 
+#                  560   enter monitor task
+# Scoreboard read 
+# temp address = 102
+# Read data from DUT 9d1f43af
+# DATA from TB memory 00009d1f43af
+# Data read successfully and it matches
+# 
+#                  570     Read burst in generator loop
+#                  570Enter into the driver 
+#                  570   enter monitor task
+# Scoreboard read 
+# temp address = 106
+# Read data from DUT ebffe7cd
+# DATA from TB memory 0000ebffe7cd
+# Data read successfully and it matches
+# 
+#                  580WE ARE DONE .. GO HOME AND SLEEP!!! .. ACTUALLY NOT YET .. 
+# End time: 19:29:03 on Mar 18,2018, Elapsed time: 0:00:14 
+# =============================================================================
+#                             SIMULATION STATISTICS                            
+# =============================================================================
+# Simulation finished at time 558162340
+# 
+# Total number of TBX clocks:                                      56215151
+# Total number of TBX clocks spent in HDL time advancement:        55816234
+# Total number of TBX clocks spent in HDL due to callee execution: 0
+# Percentage TBX clocks spent in HDL time advance:                 99.29 %
+# -----------------------------------------------------------------------------
+# Total CPU time (user mode):                                      8.30 seconds.
+# Total time spent:                                                35.63 seconds.
+# -----------------------------------------------------------------------------
+# Info!     [TCLC-5501]: : Disconnected from emulator.
+# Info!     [TCLC-5501]: : project database unlocked.
+# Info!     [TCLC-5663]: : Shutting down the user runtime session.

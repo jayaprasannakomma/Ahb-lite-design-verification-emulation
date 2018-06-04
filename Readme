@@ -1,0 +1,33 @@
+Project Group: Kirtan Mehta , Mohammad Suheb Zameer , Sai Tawale, Raveena Khandelwal
+#########################################################################################
+HDL:		The folder has systemverilog design files.
+		
+			---> ahb3lite_top.sv is the top module for the design
+
+
+HVL:		All the systemverilog files required for the environmrnt.
+		
+			---> ahb3_top is the top moddule.
+	
+Simulation: 	The transcript of questa simulation and the waveform.
+
+Emulation:	transcript.veloce 	//transcript of the veloce simulator.
+		veloce.config		// config file for the veloce
+		makefile		// makefile for emulation
+		AHBinterface.sv		// interface for DUT and Emulator
+				
+FinalReport	It has the final report of the project.
+
+##########################################################################################
+
+Steps to run the simulation:
+
+	-- vlog ahb3_top.sv  // which is present in he hvl folder
+	-- vsim -novopt -c ahb3_top 	// to simulate the environment
+
+Steps for emulation 
+
+	-- make all MODE:puresim
+	-- make all MODE:veloce 
+
+###########################################################################################

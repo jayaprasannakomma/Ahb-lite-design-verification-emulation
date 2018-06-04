@@ -1,0 +1,556 @@
+# vsim -c -novopt ahb3_top 
+# Start time: 17:20:37 on Mar 18,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.ahb3_top_sv_unit
+# Loading work.ahb3_top
+# Loading work.intf
+# Loading work.test
+# Loading work.top
+# Loading work.ahb3lite_master
+# Loading work.ahb3lite_slave
+# Loading work.ahb3lite_decoder
+# Loading work.ahb3lite_mux
+# ** Warning: (vsim-3017) top.sv(39): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ns  Iteration: 0  Instance: /ahb3_top/dut/master File: ahb3lite_master.sv
+# ** Warning: (vsim-3722) top.sv(39): [TFMPC] - Missing connection for port 'HSEL'.
+#  driver function new
+# scoreboard function
+#                   20           0 ,, task write generator
+#                   20  Enter into the driver 
+#                   20   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 011
+# HWDATA FROM input packet 	 6116fa6f
+#  Data in the memory 00006116fa6f
+# Data has been wriiten successfully
+# 
+#                   30           1 ,, task write generator
+#                   30  Enter into the driver 
+#                   30   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 022
+# HWDATA FROM input packet 	 10ed77d4
+#  Data in the memory 000010ed77d4
+# Data has been wriiten successfully
+# 
+#                   40           2 ,, task write generator
+#                   40  Enter into the driver 
+#                   40   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 033
+# HWDATA FROM input packet 	 32ccb7db
+#  Data in the memory 000032ccb7db
+# Data has been wriiten successfully
+# 
+#                   50           3 ,, task write generator
+#                   50  Enter into the driver 
+#                   50   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 044
+# HWDATA FROM input packet 	 26008320
+#  Data in the memory 000026008320
+# Data has been wriiten successfully
+# 
+#                   60           4 ,, task write generator
+#                   60  Enter into the driver 
+#                   60   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 001
+# HWDATA FROM input packet 	 37378d25
+#  Data in the memory 000037378d25
+# Data has been wriiten successfully
+# 
+#                   70           5 ,, task write generator
+#                   70  Enter into the driver 
+#                   70   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 005
+# HWDATA FROM input packet 	 da329d8a
+#  Data in the memory 0000da329d8a
+# Data has been wriiten successfully
+# 
+#                   80   task read in generator
+#                   80  Enter into the driver 
+#                   80   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 011
+# Read data from DUT 6116fa6f
+# DATA from TB memory 00006116fa6f
+# Data read successfully and it matches
+# 
+#                   90   task read in generator
+#                   90  Enter into the driver 
+#                   90   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 022
+# Read data from DUT 10ed77d4
+# DATA from TB memory 000010ed77d4
+# Data read successfully and it matches
+# 
+#                  100   task read in generator
+#                  100  Enter into the driver 
+#                  100   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 033
+# Read data from DUT 32ccb7db
+# DATA from TB memory 000032ccb7db
+# Data read successfully and it matches
+# 
+#                  110   task read in generator
+#                  110  Enter into the driver 
+#                  110   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 044
+# Read data from DUT 26008320
+# DATA from TB memory 000026008320
+# Data read successfully and it matches
+# 
+#                  120   task read in generator
+#                  120  Enter into the driver 
+#                  120   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 001
+# Read data from DUT 37378d25
+# DATA from TB memory 000037378d25
+# Data read successfully and it matches
+# 
+#                  130   task read in generator
+#                  130  Enter into the driver 
+#                  130   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 005
+# Read data from DUT da329d8a
+# DATA from TB memory 0000da329d8a
+# Data read successfully and it matches
+# 
+#                  140   write burst in generator
+#                  140  Enter into the driver 
+#                  140   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 0ab
+# HWDATA FROM input packet 	 e5cb7258
+#  Data in the memory 0000e5cb7258
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  150  Enter into the driver 
+#                  150   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0af
+# HWDATA FROM input packet 	 ff20de23
+#  Data in the memory 0000ff20de23
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  160  Enter into the driver 
+#                  160   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0b3
+# HWDATA FROM input packet 	 1d1e565a
+#  Data in the memory 00001d1e565a
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  170  Enter into the driver 
+#                  170   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0b7
+# HWDATA FROM input packet 	 71d63265
+#  Data in the memory 000071d63265
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  180  Enter into the driver 
+#                  180   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0bb
+# HWDATA FROM input packet 	 0f0c10ef
+#  Data in the memory 00000f0c10ef
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  190  Enter into the driver 
+#                  190   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0bf
+# HWDATA FROM input packet 	 88ef10cb
+#  Data in the memory 000088ef10cb
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  200  Enter into the driver 
+#                  200   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0c3
+# HWDATA FROM input packet 	 e1a0d5f2
+#  Data in the memory 0000e1a0d5f2
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  210  Enter into the driver 
+#                  210   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0c7
+# HWDATA FROM input packet 	 b829d330
+#  Data in the memory 0000b829d330
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  220  Enter into the driver 
+#                  220   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0cb
+# HWDATA FROM input packet 	 7c9045d2
+#  Data in the memory 00007c9045d2
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  230  Enter into the driver 
+#                  230   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0cf
+# HWDATA FROM input packet 	 ed421340
+#  Data in the memory 0000ed421340
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  240  Enter into the driver 
+#                  240   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0d3
+# HWDATA FROM input packet 	 bd439f73
+#  Data in the memory 0000bd439f73
+# Data has been wriiten successfully
+# 
+#                  250   write burst in generator
+#                  250  Enter into the driver 
+#                  250   enter monitor task
+# scoreboard check...
+# voloalaoaom
+# HADDR from input packet 	 0de
+# HWDATA FROM input packet 	 bb041c1d
+#  Data in the memory 0000bb041c1d
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  260  Enter into the driver 
+#                  260   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0e2
+# HWDATA FROM input packet 	 951fa19a
+#  Data in the memory 0000951fa19a
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  270  Enter into the driver 
+#                  270   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0e6
+# HWDATA FROM input packet 	 5d1ebc89
+#  Data in the memory 00005d1ebc89
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  280  Enter into the driver 
+#                  280   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0ea
+# HWDATA FROM input packet 	 10e50cfe
+#  Data in the memory 000010e50cfe
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  290  Enter into the driver 
+#                  290   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0ee
+# HWDATA FROM input packet 	 407c1ac3
+#  Data in the memory 0000407c1ac3
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  300  Enter into the driver 
+#                  300   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0f2
+# HWDATA FROM input packet 	 321b459b
+#  Data in the memory 0000321b459b
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  310  Enter into the driver 
+#                  310   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0f6
+# HWDATA FROM input packet 	 0d7a45b7
+#  Data in the memory 00000d7a45b7
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  320  Enter into the driver 
+#                  320   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0fa
+# HWDATA FROM input packet 	 9c6fad00
+#  Data in the memory 00009c6fad00
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  330  Enter into the driver 
+#                  330   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 0fe
+# HWDATA FROM input packet 	 c4273ac1
+#  Data in the memory 0000c4273ac1
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  340  Enter into the driver 
+#                  340   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 102
+# HWDATA FROM input packet 	 9d1f43af
+#  Data in the memory 00009d1f43af
+# Data has been wriiten successfully
+# 
+# write burst in generator loop
+#                  350  Enter into the driver 
+#                  350   enter monitor task
+# scoreboard check...
+# HADDR from input packet 	 106
+# HWDATA FROM input packet 	 ebffe7cd
+#  Data in the memory 0000ebffe7cd
+# Data has been wriiten successfully
+# 
+# Read burst in generator
+#                  360  Enter into the driver 
+#                  360   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 0ab
+# Read data from DUT e5cb7258
+# DATA from TB memory 0000e5cb7258
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  370  Enter into the driver 
+#                  370   enter monitor task
+# Scoreboard read 
+# temp address = 0af
+# Read data from DUT ff20de23
+# DATA from TB memory 0000ff20de23
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  380  Enter into the driver 
+#                  380   enter monitor task
+# Scoreboard read 
+# temp address = 0b3
+# Read data from DUT 1d1e565a
+# DATA from TB memory 00001d1e565a
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  390  Enter into the driver 
+#                  390   enter monitor task
+# Scoreboard read 
+# temp address = 0b7
+# Read data from DUT 71d63265
+# DATA from TB memory 000071d63265
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  400  Enter into the driver 
+#                  400   enter monitor task
+# Scoreboard read 
+# temp address = 0bb
+# Read data from DUT 0f0c10ef
+# DATA from TB memory 00000f0c10ef
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  410  Enter into the driver 
+#                  410   enter monitor task
+# Scoreboard read 
+# temp address = 0bf
+# Read data from DUT 88ef10cb
+# DATA from TB memory 000088ef10cb
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  420  Enter into the driver 
+#                  420   enter monitor task
+# Scoreboard read 
+# temp address = 0c3
+# Read data from DUT e1a0d5f2
+# DATA from TB memory 0000e1a0d5f2
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  430  Enter into the driver 
+#                  430   enter monitor task
+# Scoreboard read 
+# temp address = 0c7
+# Read data from DUT b829d330
+# DATA from TB memory 0000b829d330
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  440  Enter into the driver 
+#                  440   enter monitor task
+# Scoreboard read 
+# temp address = 0cb
+# Read data from DUT 7c9045d2
+# DATA from TB memory 00007c9045d2
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  450  Enter into the driver 
+#                  450   enter monitor task
+# Scoreboard read 
+# temp address = 0cf
+# Read data from DUT ed421340
+# DATA from TB memory 0000ed421340
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  460  Enter into the driver 
+#                  460   enter monitor task
+# Scoreboard read 
+# temp address = 0d3
+# Read data from DUT bd439f73
+# DATA from TB memory 0000bd439f73
+# Data read successfully and it matches
+# 
+# Read burst in generator
+#                  470  Enter into the driver 
+#                  470   enter monitor task
+# Scoreboard read 
+# hedlloo
+# temp address = 0de
+# Read data from DUT bb041c1d
+# DATA from TB memory 0000bb041c1d
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  480  Enter into the driver 
+#                  480   enter monitor task
+# Scoreboard read 
+# temp address = 0e2
+# Read data from DUT 951fa19a
+# DATA from TB memory 0000951fa19a
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  490  Enter into the driver 
+#                  490   enter monitor task
+# Scoreboard read 
+# temp address = 0e6
+# Read data from DUT 5d1ebc89
+# DATA from TB memory 00005d1ebc89
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  500  Enter into the driver 
+#                  500   enter monitor task
+# Scoreboard read 
+# temp address = 0ea
+# Read data from DUT 10e50cfe
+# DATA from TB memory 000010e50cfe
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  510  Enter into the driver 
+#                  510   enter monitor task
+# Scoreboard read 
+# temp address = 0ee
+# Read data from DUT 407c1ac3
+# DATA from TB memory 0000407c1ac3
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  520  Enter into the driver 
+#                  520   enter monitor task
+# Scoreboard read 
+# temp address = 0f2
+# Read data from DUT 321b459b
+# DATA from TB memory 0000321b459b
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  530  Enter into the driver 
+#                  530   enter monitor task
+# Scoreboard read 
+# temp address = 0f6
+# Read data from DUT 0d7a45b7
+# DATA from TB memory 00000d7a45b7
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  540  Enter into the driver 
+#                  540   enter monitor task
+# Scoreboard read 
+# temp address = 0fa
+# Read data from DUT 9c6fad00
+# DATA from TB memory 00009c6fad00
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  550  Enter into the driver 
+#                  550   enter monitor task
+# Scoreboard read 
+# temp address = 0fe
+# Read data from DUT c4273ac1
+# DATA from TB memory 0000c4273ac1
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  560  Enter into the driver 
+#                  560   enter monitor task
+# Scoreboard read 
+# temp address = 102
+# Read data from DUT 9d1f43af
+# DATA from TB memory 00009d1f43af
+# Data read successfully and it matches
+# 
+# Read burst in generator loop
+#                  570  Enter into the driver 
+#                  570   enter monitor task
+# Scoreboard read 
+# temp address = 106
+# Read data from DUT ebffe7cd
+# DATA from TB memory 0000ebffe7cd
+# Data read successfully and it matches
+# 
+#                  580WE ARE DONE .. GO HOME AND SLEEP!!! .. ACTUALLY NOT YET .. 
+# End time: 17:20:43 on Mar 18,2018, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 3
